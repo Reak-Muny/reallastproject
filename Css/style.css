@@ -1,0 +1,341 @@
+body {
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.bgwhite {
+    background-color: rgb(247, 249, 251);
+}
+.mainfont{
+    font-family: "Poetsen One", sans-serif;
+}
+#drop{
+    background-color: #ffffff;
+    color: black;
+}
+#drop:hover{
+    background-color: #faf9f9;
+    color: #ffc107;
+}
+#lis{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#lis:hover{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffc107;
+}
+.colors{
+    background-color: white;
+    transform: all 300ms ease-in;
+    .svg {
+        color: #ffc107;
+    }
+}
+.colors:hover{
+    background-color: #ffc107;
+    transform: all 300ms ease-in;
+    color: aliceblue;
+        .svg {
+        color: aliceblue;
+    }
+}
+.volatile-container {
+            animation: rotate 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+        }
+
+        .circular-image {
+            max-width: 100%;
+    height: auto;
+    display: block;
+            filter: contrast(1.2) brightness(1.1);
+            
+        }
+@keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+.input {
+    border: none;
+    }
+.input:hover {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.stylefont{
+    font-family: "Playwrite DK Loopet", cursive;
+}
+.sign{
+    z-index: 200;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.chefs{
+    box-shadow: 0 0 45px rgb(0, 0, 0, .08);
+    height: calc(100% - 38px);
+    transition: .5s;
+}
+.chefs:hover{
+    box-shadow: 0 0 45px rgb(0, 0, 0, .08);
+    height: 100%;
+    transition: .5s;
+}
+.chefs img {
+    transition: .5s;
+}
+.chefs:hover img{
+    transform: scale(1.1);
+}
+
+.chefs .btn{
+    border-radius: 38px 38px 0 0;
+}
+.btn-svg{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 35px;
+    transition: .3s;
+}
+.btn.svg:hover{
+    color: #ffc107;
+}
+.bgblue{
+    background-color: rgb(12, 12, 47);
+}
+/* rate */
+.fontname{
+    font-family: "Pacifico", cursive;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sizefont{
+    font-size: 35px;
+}
+.sizef{
+    font-size: 60px;
+}
+.formsearch{
+    width: 50%;
+    height: 50px;
+    border: 2px solid #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+    .input-form{
+        border: none;
+        outline: none;
+        box-shadow: none;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 21px 23px;
+    }
+}
+/* style-menu */
+.cart-icon, .orders-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 0.5rem;
+    transition: color 0.2s;
+}
+
+.cart-icon:hover, .orders-icon:hover {
+    color: #ffc107;
+}
+
+.cart-count, .orders-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+}
+/* food */
+.food-item {
+    transition: transform 0.2s;
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+}
+
+.food-item .card {
+    height: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.food-item .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-item .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.order-item {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1rem;
+}
+
+.order-item-products {
+    margin-left: 1rem;
+}
+
+.btn-quantity {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+#searchInput {
+    border-right: none;
+}
+
+#searchButton {
+    border-left: none;
+}
+.cart-total {
+    text-align: right;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+}
+/* order and cancel */
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.table th {
+    background-color: #f8f9fa;
+}
+
+.btn-action {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    margin: 0 0.2rem;
+}
+
+.btn-order {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-order:hover {
+    background-color: #218838;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #5a6268;
+    color: white;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #80bdff;
+} 
+/* Sign  in  Sign  up */
+.form-container {
+            display: none;
+        }
+        /* Show form when it's the target of the URL hash */
+        .form-container:target {
+            display: block;
+        }
+        /* Show signin form by default when no hash is present */
+        .form-container#signin {
+            display: block;
+        }
+        /* Hide signin form when signup is targeted */
+        #signup:target ~ #signin {
+            display: none;
+        }
+        /* Hide submit button when checkbox is not checked */
+        #rememberMe:not(:checked) ~ .submit-container {
+            display: none;
+        }
+        /* Show message when checkbox is not checked */
+        #rememberMe:not(:checked) ~ .checkbox-message {
+            display: block;
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        .checkbox-message {
+            display: none;
+        }
