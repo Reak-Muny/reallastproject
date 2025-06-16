@@ -1,6 +1,4 @@
-body {
-    overflow-x: hidden;
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -50,22 +48,12 @@ body {
 }
 .volatile-container {
             animation: rotate 10s linear infinite;
-    overflow: hidden;
-    display: inline-block;
-    transform-origin: center;
-    max-width: 100%;
-    width: 100%;
-    box-sizing: border-box;
+            overflow: hidden;
         }
 
         .circular-image {
-             max-width: 100%;
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    filter: contrast(1.2) brightness(1.1);
-    display: block;
-    margin: 0 auto;
+            max-width: 100%;
+            filter: contrast(1.2) brightness(1.1);
             
         }
 @keyframes rotate {
