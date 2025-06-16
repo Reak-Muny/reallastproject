@@ -54,7 +54,7 @@ body {
         }
 
         .circular-image {
-            
+            max-width: 100%;
             filter: contrast(1.2) brightness(1.1);
             
         }
