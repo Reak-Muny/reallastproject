@@ -50,16 +50,11 @@ body {
 }
 .volatile-container {
             animation: rotate 10s linear infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+            overflow: hidden;
         }
 
         .circular-image {
             max-width: 100%;
-    height: auto;
-    display: block;
             filter: contrast(1.2) brightness(1.1);
             
         }
