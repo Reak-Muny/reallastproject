@@ -48,14 +48,9 @@
 }
 .volatile-container {
             animation: rotate 10s linear infinite;
-            overflow: hidden;
+            filter: contrast(1.2) brightness(1.1);
         }
 
-        .circular-image {
-            max-width: 100%;
-            filter: contrast(1.2) brightness(1.1);
-            
-        }
 @keyframes rotate {
             from {
                 transform: rotate(0deg);
